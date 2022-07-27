@@ -4,36 +4,33 @@ const buttonMultiplica = document.querySelector('#button-multiplicar');
 const buttonDivide = document.querySelector('#button-dividir');
 let divResultado = document.querySelector('#resultado');
 
-buttonSoma.addEventListener('click', () => {
+function pegarValores() {
   const numero1 = document.querySelector('#numero1').value;
   const numero2 = document.querySelector('#numero2').value;
+};
 
-  
-  divResultado.textContent = `A soma de ${numero1} + ${numero2} = ${somar(numero1, numero2)}`;
+buttonSoma.addEventListener('click', () => {
+  pegarValores();
+
+  divResultado.textContent = `A soma de ${numero1.value} + ${numero2.value} = ${somar(numero1.value, numero2.value)}`;
 });
 
 buttonSubtrai.addEventListener('click', () => {
-  const numero1 = document.querySelector('#numero1').value;
-  const numero2 = document.querySelector('#numero2').value;
+  pegarValores();
 
-  subtrair(numero1, numero2);
-  divResultado.textContent = `A subtração de ${numero1} - ${numero2} = ${subtrair(numero1, numero2)}`;
+  divResultado.textContent = `A subtração de ${numero1.value} - ${numero2.value} = ${subtrair(numero1.value, numero2.value)}`;
 });
 
 buttonMultiplica.addEventListener('click', () => {
-  const numero1 = document.querySelector('#numero1').value;
-  const numero2 = document.querySelector('#numero2').value;
+  pegarValores();
 
-  multiplicar(numero1, numero2);
-  divResultado.textContent = `A multiplicação de ${numero1} * ${numero2} = ${multiplicar(numero1, numero2)}`;
+  divResultado.textContent = `A multiplicação de ${numero1.value} * ${numero2.value} = ${multiplicar(numero1.value, numero2.value)}`;
 });
 
 buttonDivide.addEventListener('click', () => {
-  const numero1 = document.querySelector('#numero1').value;
-  const numero2 = document.querySelector('#numero2').value;
+  pegarValores();
 
-  dividir(numero1, numero2);
-  divResultado.textContent = `A divisão de ${numero1} / ${numero2} = ${dividir(numero1, numero2)}`;
+  divResultado.textContent = `A divisão de ${numero1.value} / ${numero2.value} = ${dividir(numero1.value, numero2.value)}`;
 });
 
 function somar(numero1, numero2) {
