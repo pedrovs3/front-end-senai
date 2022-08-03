@@ -1,3 +1,5 @@
+'use strict'
+
 const buttonSoma = document.querySelector('#button-somar');
 const buttonSubtrai = document.querySelector('#button-subtrair');
 const buttonMultiplica = document.querySelector('#button-multiplicar');
