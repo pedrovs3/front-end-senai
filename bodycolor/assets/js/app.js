@@ -1,3 +1,5 @@
+'use strict'
+
 const buttonCor = document.querySelector('#colorSubmit');
 let corInput = document.querySelector('#colorInput');
 
