@@ -13,6 +13,7 @@ buttonSoma.addEventListener('click', () => {
   pegarValores();
 
   divResultado.textContent = `A soma de ${numero1.value} + ${numero2.value} = ${somar(numero1.value, numero2.value)}`;
+  console.log(Calculadora1.somar());
 });
 
 buttonSubtrai.addEventListener('click', () => {
@@ -48,4 +49,3 @@ function multiplicar(numero1, numero2) {
 function dividir(numero1, numero2) {
   return numero1 / numero2;
 };
-

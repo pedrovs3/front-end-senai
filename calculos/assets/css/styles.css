@@ -34,8 +34,21 @@ input[type="text"] {
 }
 
 .grid-buttons button{
-  padding: 10px 20px;
+  margin: 0 auto;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: #0099ff;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.grid-buttons button:hover{
+  background-color: #00c3ff;
+  color: #003cff;
 }
 
 #resultado {
