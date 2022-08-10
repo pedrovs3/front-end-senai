@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --dark-bg: #121212;
+  --translucid-color: #ffffffb7;
+  --blue-color: #009dff;
+  --white-color: #f5f5f5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark-bg);
+  gap: 50px;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+  background-color: var(--blue-color);
+  padding: 90px;
+  border-radius: 5px;
+}
+
+input[type="number"] {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+.button{
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: var(--translucid-color);
+  transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 2px 2px 5px 2px var(--white-color);
+}
+
+.result{
+  padding: 20px 50px;
+  background-color: var(--translucid-color);
+  border-radius: 5px;
+}
+
