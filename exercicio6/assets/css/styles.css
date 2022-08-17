@@ -45,8 +45,7 @@ input[type="number"] {
 }
 
 .result{
-  height: 50px;
-  width: 350px;
+  padding: 20px 100px;
   background-color: #fff;
   border-radius: 5px;
 }
