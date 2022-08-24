@@ -13,3 +13,5 @@ Exercicio G (Lógica) => https://pedrovs3.github.io/front-end-senai/exercicio4/
 Exercicio K (Lógica) => https://pedrovs3.github.io/front-end-senai/exercicio5/ 
 
 Exercicio O (Lógica) => https://pedrovs3.github.io/front-end-senai/exercicio6/ 
+
+Cards => https://pedrovs3.github.io/front-end-senai/execArray/ 
