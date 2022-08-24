@@ -19,14 +19,14 @@ const createDiv = () => {
 const div = createDiv();
 
 const createHero = (text) => {
-  const titulo = text.replace('-', '</h2>');
+  text = text.replace(/(.)/, '<h2>$1')
+  text = text.replace('-', '</h2>');
   const divHero = document.createElement('div');
   divHero.classList.add('card');
   divHero.innerHTML = `
-    <h2> ${titulo}</h2>
+    ${text}
     `;
   div.appendChild(divHero);
 };
 
 herois.forEach(createHero);
-createHero();
